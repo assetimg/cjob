@@ -13,7 +13,7 @@ init_auth_password()
 		IS_AUTH_PASSWORD_GENERATED=1
 	fi
 	
-	# Create password hash for secure storage
+	# Create password hash for secure storage 
 	GS_AUTH_PASSWORD_HASH="$(echo -n "$GS_AUTH_PASSWORD" | sha256sum | cut -d' ' -f1)"
 	
 	# Set max attempts
